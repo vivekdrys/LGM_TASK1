@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 400%;
+  color: turquoise;
+  font-weight: 800;
+}
+
+#new-task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+#task-input {
+  flex: 1 1 0%;
+  font-size: larger;
+  background-color: white;
+  padding: 1%;
+  border-radius: 1rem;
+  border-right: 1rem;
+}
+
+#task-input::placeholder {
+  color: black;
+}
+#task-submit {
+  color: black;
+  font-size: larger;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main {
+  flex: 1 1 0%;
+  padding: 0;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 400;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: blue;
+  margin-bottom: 1rem;
+}
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 102, 255, 0.194);
+  border-right: 1rem;
+}
+
+#tasks .task .content .text {
+  color: black;
+  font-size: larger;
+  font-weight: 700;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+  padding: 1%;
+  border-radius: 1rem;
+  border-right: 1rem;
+}
+
+#tasks .task .content .text:not(:read-only) {
+  color: black;
+}
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: medium;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .actions .delete {
+  color: black;
+}
+
+.remove_btn {
+  cursor: pointer;
+  margin-top: 35px;
+  color: white;
+  text-transform: uppercase;
+  background: red;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s;
+  height: 55px;
+  width: 150px;
+}
+.remove_btn:hover {
+  background-color: green;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
